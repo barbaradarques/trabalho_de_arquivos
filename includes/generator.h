@@ -18,7 +18,7 @@
 
 #define MAX_REG 100 //numero maximo de registro para importação
 #define MARGIN '\n' //delimitador para parser de importação para cada unidade
-#define BORDER ',' //delimitador para parser de importação para atributos
+#define BORDER '\n' //delimitador para parser de importação para atributos
 #define REG_DELI '#' //delimitador de registro
 #define FIELD_DELI '|' //delimitador de campos de registro
 
