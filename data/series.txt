@@ -1,23 +1,713 @@
-naruto,ninja lutando por ai...,japan,1994,18,shounen
-bleach,shinigami ceifando,japan,2002,13,shounen
-soul eater,cabulosamente confuso,japan,2005,2,shounen
-gintama,ocioso forte para ****,japan,2001,6,shounen
-hagane no renkinjutsushi,alchimistas lutando contra humunculos,japan,2003,4,shounen
-tokyo ghoul,subespecies humanas comendo pessoas,japan,2010,3,shounen
-slam dunk,basquete colegial,japan,1991,5,shounen
-dragon ball,lutadores marciais batalhando com E.T.s,japan,1980,99,shounen
-yu yu hakusho,aventuras do submundo contra monstros,japan,1989,88,shounen
-yugioh,partidas de card/tabuleiro,japan,1993,99,shounen
-power ranger,pessoas estranhas vestindo calÃ§as leg,japan,1900,99,shounen
-ultraman,pessoa estranha vestindo calÃ§a leg e gigante,japan,1900,99,shounen
-bayblade,crianÃ§as brincando de peÃ£o alucinados,japan,2003,3,shounen
-kirby,criatura espacial que come tudo,japan,1999,1,shounen
-code geass,revoltado juvenil que ganha poderes e provoca uma guerra global,japan,2003,3,shounen
-pandora hearts,garoto misterioso que conhece uma menina que Ã© na verdade um coelho assassino,japan,2001,1,shounen
-one piece,um garoto vida louca que quer virar piratÃ£o,japan,1990,22,shounen
-nanatsu no taizai,um bando de guerreiros muito massa marginalizado pela realeza,japan,2010,2,shounen
-one punch-man,um homem forte demais que luta por hobby,japan,2012,2,shounen
-magi,um garoto mago que anda pelo mundo em busca da paz mundial,japan,2008,3,shounen
-ajin,pessoas imortais perseguidos para experiencias,japan,2013,1,shounen
+Hannibal
+Um psiquiatra forense que se torna o inimigo mais astuto do FBI
+Estados Unidos
+2013
+3
+Terror
 
+Lost
+Uns caras que se perdem em uma ilha
+Estados Unidos
+2004
+6
+ficcao cientifica
 
+Faking it
+Duas amigas que fazem de tudo para se tornarem populares
+Estados Unidos
+2014
+3
+comedia
+
+Crisis
+Agente do serviço secreto se depara com uma crise nacional no seu primeiro dia de trabalho
+Estados Unidos
+2014
+1
+Policial
+
+Happily Divorced
+A serie retrata a vida de um casal, que durante 18 anos foram casados, ate que o marido se torna homossexual
+Estados Unidos
+2011
+2
+Comedia
+
+Chasing Life
+Uma jovem jornalista que descobre ter cancer em um otimo momento de sua vida e agora tera que lidar com essa nova dificuldade
+Estados Unidos
+2014
+2
+Drama
+
+The Good Wife
+Uma mulher que apos 13 anos de dedicacao a sua familia, descobre seu marido envolvido em escandalos sexuais, com isso ela volta a seu emprego e sua antiga vida
+Estados Unidos
+2009
+7
+Drama
+
+Weeds
+Apos a morte de seu marido, Nancy Botwin, passa a vender maconha para sustentar seus filhos
+Estados Unidos
+2005
+8
+Humor
+
+Dexter
+A historia de um serial killer que trabalha na policia florense
+Estados Unidos
+2006
+8
+Suspense
+
+New Girl
+Uma garota que mora com seu ex-namorado e mais 2 amigos
+Estados Unidos
+2011
+5
+Comedia
+
+White Collar
+Um ex-ladrao, que apos ser capturado pelo FBI, pela segunda vez, se oferece para ajuda-los
+Estados Unidos
+2009
+6
+Policial
+
+Supernatural
+Sam e Dean sao irmas e vivem casando monstros do submundo
+Estados Unidos
+2005
+11
+Acao
+
+Bad Teacher
+Uma mulher que apos se separar do marido fica sem nada e vira professora para tentar ficar com um pai rico
+Estados Unidos
+2014
+1
+Comedia
+
+Demolidor
+Apos perder seu pai, Matthew, passa a treinar varios estilos de luta para poder defender a cidade que ama
+Estados Unidos
+2015
+2
+Acao
+
+iZombie
+Uma mulher que se tranforma em zombie e passa a trabalhar em um necroterio para saciar sua fome de cerebros sem ser decoberta
+Estados Unidos
+2015
+2
+Comedia
+
+Younger
+Uma mulher de 40 anos, que apos 15 anos inativa, tenta encontrar um emprego e para isso finge ter 26 anos
+Estados Unidos
+2015
+2
+Comedia
+
+Game of Thrones
+Se passa nos sete reinos de Westeros, onde as familias nobres lutam para ter o controle do trono de ferro
+Estados Unidos
+2011
+6
+Aventura
+
+Colony
+Um agente do FBI que aceita colaborar com o governo para dettuber um movimento de resistencia crescente em los angeles
+Estados Unidos
+2016
+1
+Drama
+
+American Horror Story
+Cada temporada retrata uma historia distinta, com seus proprio enredo e personagens
+Estados Unidos
+2011
+5
+Terror
+
+Vikings
+Serie que retrata os feitos de Ragnar Lothbrok, um lendario chefe nordico
+Canada
+2013
+4
+Drama
+
+2 Broke Girls
+Serie sobre duas amigas que trabalham em um restaurante de um norte-coreano e sonham em abrir uma loja de cupcakes
+Estados Unidos
+2011
+5
+Comedia
+
+Constantine
+A serie fala sobre um exorcista que luta contra pecados passados enquanto tenta proteger a humanidade de uma ameaca sobrenatural
+Estados Unidos
+2014
+1
+Terror
+
+Lucifer
+Lucifer abdica do seu trono e abre uma boate em Los Angeles e apos presenciar uma morte acaba de aproximando de chloe, uma detetive
+Estados Unidos
+2016
+1
+Drama
+
+Revenge
+Uma mulher que volta a sua antiga cidade para se vingar das pessoas que destruiram sua familia
+Estados Unidos
+2011
+4
+Drama
+
+Alphas
+A serie segue 5 pessoas conhecidas como alphas, que lideradas por um neurologista e psicologo resolvem crimes
+Estados Unidos
+2011
+2
+Acao
+
+24 Horas
+A serie retrata um agente da unidade contra terrorista e muitas missoes eletrizantes
+Estados Unidos
+2001
+9
+Acao
+
+Episodes
+Roteristas criam uma comedia britanica para a televisao americana e passam por situacoes absurdas e inusitadas
+Estados Unidos
+2011
+4
+Comedia
+
+Friends
+Acompanha a aventura de seis amigos que enfrentam as armadilhas da vida, do trabalho e do amor
+Estados Unidos
+1994
+10
+Drama
+
+Alias
+Agente recrutada para um grupo eh enganada e acaba matando seu proprio noivo, entao ela quer vinganca
+Estados Unidos
+2001
+5
+Aventura
+
+Gotham
+Apos seus pais serem assassinados na sua frente, Bruce, decide aprender a lutar e livrar sua cidade dos crimes
+Estados Unidos
+2014
+2
+Acao
+
+Teen Wolf
+A história gira em torno de scott um garoto que doi mordido por um lobo e vira lobisomem
+Estados Unidos
+2011
+5
+sobrenatural
+
+10 Things I Hate About You
+3 irmãs se mudam para uma nova cidade e começam a conviver na nova escola
+Estados Unidos
+2009
+1
+comedia
+
+Chicago Fire
+A história se desenvolve no acompanhamento da vida dos bombeiros de chicago
+Estados Unidos
+2012
+4
+drama
+
+Eye Candy
+Lindy e uma hacker de 21 anos, que comeca a conversar com um pretendente online e desconfia que ele seja um serial killer
+Estados Unidos
+2015
+1
+suspense
+
+Forever
+Dr. Henry Morgan, é médico legista e estuda os mortos para tentar entender sua imortalidade
+Estados Unidos
+2014
+1
+fantasia
+
+Love Bites
+A serie retrata a vida de duas mulheres solteiras, que exploram os altos e baixos de um namoro
+Estados Unidos
+2011
+1
+romance
+
+90210
+A serie se baseia em Beverly Hills e tem tematica jovem
+Estados Unidos
+2008
+5
+drama
+
+The River
+Conta a historia de Linlcoln, um homem que vai em busca de seu pai, desaparecido enquanto filmava na amazonia
+Estados Unidos
+2012
+1
+terror
+
+Boss
+Se trata de um politico da cidade de chicago, que mesmo sabendo que tem uma doenca degenerativa tenta se manter no poder
+Estados Unidos
+2011
+2
+drama
+
+Skins Us
+uma serie televesiva que trata da vida de jovens
+Canada
+2011
+1
+drama
+
+Firefly
+A serie se passa no ano de 2517, em um novo sistema solar, e segue as aventuras de uma tripulacao renegada
+Estados Unidos
+2002
+1
+ficcao
+
+Bones
+A serie retrata policiais investigativos e seus dramas pessoais
+Estados Unidos
+2005
+11
+acao
+
+V
+Alienigenas invadem a terra e alguns humanos tentam defender seu planeta, enquanto outros se aliam aos aliens
+Estados Unidos
+2009
+2
+ficcao
+
+The X Files
+O arquivo x e um arquivo que relata casos paranormais, um livro guardado pelo Fbi no subsolo
+Estados Unidos
+1993
+10
+suspense
+
+The Playboy Club
+Retrata o playboy club dos anos 60
+Estados Unidos
+2005
+1
+provocativo
+
+Elementary
+Retrata a vida de sherlock holmes, um investigador e sua assistente, que resolvem casos para o FBI
+Estados Unidos
+2012
+4
+investigativo
+
+Banshee
+A serie se passa na cidade de banshee na regiao de amish, onde um ex-presidiario assume a identidade de um xerife que foi assassinado
+Estados Unidos
+2013
+2
+crime
+
+Justified
+a historia retrata um homem que vive uma justica do seculo 19 nos tempos modernos, por ser assim ele se torna alvo de muitos criminosos
+Estados Unidos
+2010
+6
+policial
+
+Buffy
+buffy e uma garota e uma caca vampiros e vive tentando conciliar sua vida de cacadora com a de estudante
+Estados Unidos
+1997
+7
+acao
+
+Orphan Black
+a serie fala sobre varios clones e um em especial que pode assumir a identidade dos outros
+Canada
+2013
+4
+ficcao
+
+Charmed
+a serie retrata as irmas Halliwell, sao as bruxas mais poderosas e boas feiticeiras, conhecidas na comunidade por charmed ones
+Estados Unidos
+1998
+8
+drama
+
+Alcatraz
+A historia apresenta as investigacoes em torno de misteriosas ocorrencias na ilha de alcatraz
+Estados Unidos
+2012
+1
+investigacao
+
+Zoo
+A historia retrata um zoologista que trabalha na africa e comeca a perceber um comportamento estranho nos animais
+Estados Unidos
+2015
+1
+drama
+
+Doctor Who
+A serie segue a vida de um renegado senhor do tempo que atende pelo nome de doutor. Apos sair de seu planeta ele comeca a poder viajar no espaco tempo
+Estados Unidos
+1963
+10
+ficcao
+
+Chuck
+Um nerd que tem um programa ulta secreto instalado em seu cerebro, tem que lutar contra a CIA para nao morrer
+Estados Unidos
+2007
+5
+comedia
+
+Person Of Interest
+Um bilionario misterioso desenvolve para o governo americano um programa que preve atos terroristas
+Estados Unidos
+2011
+5
+drama
+
+Dracula
+A serie mostra a chegada de Dracula a londres, se desfarcando como um empresario
+Reino Unido
+2013
+1
+terror
+
+Franklin e Bash
+Retrata a vida de dois amigos de longa data, que sao advogados nada convencionais
+Estados Unidos
+2011
+2
+comedia
+
+Misfits
+Fala sobre um grupo de jovens delinquentes condenados a trabalhar em um programa de servico comunitario
+Reino Unido
+2009
+5
+drama
+
+Haven
+A agente especial do FBI Audrey, e direcionada para um cidade onde ela encontra uma praga de aflicoes sobrenaturais
+Canada
+2010
+5
+sobrenatural
+
+Whitney
+Retrata a vida de whitney e seu namorado, mesmo nao querendo se casar, whitney teme que seu relacionamento esta caindo no tedio
+Estados Unidos
+2011
+2
+comedia
+
+Gossip Girl
+Retrata um colegio, onde alguem cria um blog para falar sobre as fofocas de todas as pessoas
+Estados Unidos
+2007
+5
+drama
+
+Flash
+Retrata a historia de Berrie Allen, um garoto que apos levar um choque de uma nuvem radiotiva ganha super poderes
+Estados Unidos
+2014
+2
+acao
+
+Narcos
+Conta a histoaria de um policial, que foi designado para prender o traficante mundialmente conhecido Pablo Escobar
+Estados Unidos
+2015
+1
+policial
+
+Veronica Mars
+Retrata a historia de uma jovem colegial, que tambem eh uma investigadora particular junior
+Estados Unidos
+2004
+3
+drama
+
+Camelor
+Serie que fala sobre a vida de Rei Arthur
+Irlanda
+2011
+1
+historia
+
+Unforgettable
+A serie gira em torno de uma policial que sofre de uma sindrome que faz com que ela nao esqueca de nada
+Estados Unidos
+2011
+4
+policial
+
+Breakin Bad
+Retrata a historia de um professor de quimica que, apos descobrir que tem uma doenca terminal, passa a produzir meta anfetamina
+Estados Unidos
+2008
+5
+drama
+
+Awkward
+Historia sobre uma garota que passa a ser popular por acharem que ela eh suicida
+Estados Unidos
+2011
+5
+comedia
+
+Free Agents
+Apos seu divorcio Alex comeca a ficar depressivo, sua amiga de trabalho Helen tambem esta nessa situacao, apos beberem em uma noite acordam juntos e viram um casal complicado
+Estados Unidos
+2009
+1
+comedia
+
+Beauty and the Beast
+Uma nova adaptacao do conto de fadas "a bela e a fera"
+Estados Unidos
+2012
+4
+romance
+
+Vampire Diaries
+A historia gira em torno de uma garota que se apaixona por um vampiro e comeca a ter muitos probelmas com criaturas sobrenaturais e com seu romance
+Estados Unidos
+2006
+7
+romance
+
+The Walking Dead
+Rick acorda em um hospital abandonado apos tomar um tiro em sua ultima missao, quando percebe, o mundo esta tomado por zumbies e ele quer encontrar sua familia
+Estados Unidos
+2010
+5
+ficcao
+
+Suburgatory
+A historia de uma garota que se muda para um bairro onde as pessoas sao muito calmas e nao existem perigos
+Estados Unidos
+2011
+3
+comedia
+
+How i Met your Mother
+A historia comeca com Ted contando aos seus filhos como ele conheceu a mae deles, ele conta toda sua historia com seus grandes amigos
+Estados Unidos
+2005
+9
+drama
+
+Baskets
+Fala sobre um homem que sonha em se tornar um palhaco profissional
+Estados Unidos
+2016
+1
+comedia
+
+Spartacus
+Retrata a historia da grande esparta e seus guerreiros
+Estados Unidos
+2010
+3
+aventura
+
+Suits
+Dois advogados associados que ganham muitos casos juridicos
+Estados Unidos
+2011
+5
+comedia
+
+30 Rock
+Comedia ambientada nos bastidores de um programa de variedades exibido ao vivo
+Estados Unidos
+2010
+6
+comedia
+
+Chicago med
+Retrata um grupo de medicos da cidade de chicago
+Estados Unidos
+2016
+1
+drama
+
+Community
+Um advogado que cria um grupo de estudos dentro de um colegio e todos do grupo acabam se conhecendo mais ainda
+Estados Unidos
+2009
+6
+drama
+
+Death Valley
+Retrata a cidade de los angeles, porem, tomada por zumbis
+Estados Unidos
+2015
+1
+aventura
+
+The Client List
+Uma mulher que perdeu o emprego e acaba entrando em um spa para trabalhar
+Estados Unidos
+2012
+2
+drama
+
+A Gifted Man
+A trama explora o tema da vida apos a morte
+Estado Unidos
+2011
+1
+drama
+
+House
+Trata a equipe de um genial medico de diagnosticos e sobre sua vida
+Estados Unidos
+2004
+9
+ficcao
+
+Baby Daddy
+um homem que se torna pai de uma garotinha, apos alguem deixa-la na sua porta
+Estados Unidos
+2012
+5
+comedia
+
+Intelligence
+Sobre Gabriel, um supercomputador criado pelos EUA que tem um coracao
+Estados Unidos
+2014
+1
+aventura
+
+Selfie
+Trata a vida de uma jovem de 20 anos que esta mais preocupada em ser aceita na internet do que na vida real
+Estados Unidos
+2014
+1
+comedia
+
+The Originals
+Retrata a historia de uma familia de vampiros, os primeiros da sua especie
+Estados Unidos
+2013
+3
+suspense
+
+Fringe
+A serie retrata acidentes sobrenaturais que ocorrem e intrigam agentes do FBI
+Estados Unidos
+2008
+5
+ficcao
+
+Black Sails
+A serie se passa durante a era de ouro dos piratas
+Estados Unidos
+2014
+3
+drama
+
+Aquarius
+Retrata um sargento da policia de Los Angeles
+Estados Unidos
+2015
+1
+drama
+
+Sons of Anarchy
+A serie retrata a vida de co-diretor de um clube do motoqueiros e seu clube
+Estados Unidos
+2008
+7
+crime
+
+House of Cards
+Trata-se de uma historia onde sao ultrapassados os limites para satisfazer o desejo de um homem
+Estados Unidos
+2013
+4
+drama
+
+Better Call Saul
+Uma serie inspirada em um personagem da serie Breaking Bad, o advogado Saul
+Estados Unidos
+2015
+2
+comedia
+
+Chaos
+Um grupo comico da CIA que tem como missao combater agentes desonestos
+Estados Unidos
+2011
+1
+comedia
+
+Angle
+Retrata a historia de Angelus, um jovem rico, que em uma noitada acaba virando vampiro
+Estados Unidos
+1994
+5
+terror
+
+Divine
+Um sacerdote que esta com uma crise de fe
+Canada
+2011
+1
+acao
+
+Hand of God
+Um corrupto que sofre alguns processos e acredita que deus esta cobrando dele
+Estados Unidos
+2014
+2
+drama
+
+Under the Dome
+uma cidade eh cercada por uma redoma invisivel e as pessoas fazer de tudo para sobreviver
+Estados Unidos
+2012
+3
+drama
+
+Sherlock
+Retrata a vida de sherlock holmes e seu parceiro watson, detetives particulares
+Reino Unido
+2010
+3
+policial
+
+Everwood
+apos perder sua mulher, Andy, vai para uma pequena cidade para encontrar o sentido da vida
+Estados Unidos
+2002
+4
+drama
