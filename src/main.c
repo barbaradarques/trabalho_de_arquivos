@@ -6,46 +6,66 @@
     Vinícius Volponi Ferreira       9039292
 ============================================= */
 
-#include "reader.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "reader.h"
+#include "registry.h"
+#include "generator.h"
 
 int main(){
-    int op, id;
-    scanf("%d", &op);
     
-    //--- para limpar o arquivo a cada execução ===//
-    FILE *fp = fopen("registros.dat", "w");
-    fclose(fp);
-    //--------------------------------------------//
+    // Geração do arquivo binário de registros
+    
+    FILE* series = fopen("./data/series.txt", "r"); // abre arquivo de texto auxiliar
+    FILE* db = fopen("./data/db_series.bin", "wb"); // abre um novo arquivo binário de registros
+
+    if(series != NULL && db != NULL){ // caso os arquivos tenham sido abertos com sucesso
+        int i;
+        for(i = 0; i < MAX_REG; i++){
+            int pos = randomPosition();  // sorteia uma posição de leitura dentro do arquivo de texto
+            REG* regist = readToImport (series, pos); // guarda o registro lido na posição acima
+            importOneRegist (db, regist); // salva o registro lido no arquivo de dados
+            deleteRegist(&regist); // libera o REG* alocado
+        }
+        fclose(series);
+        fclose(db);
+    } else {
+        printf("erro ao abrir arquivo: series(%d) db (%d)\n",  
+            series == NULL, db == NULL);
+            return -1;
+    }
+    
+    // Início da interação com o usuário
+    
+    int op, id;
     printf("\n\n\t\tSeja Bem-Vindo(a)!\n\n\n");
-   
-    while(op!=0){ // aceita o cadastro de novos registros até o fim da entrada
+    
+    do {
+        // menu
         printf("Escolha a opção desejada:\n\n");
-        printf("[1]\tAdicionar uma nova série.\n"); // vai ser retirado depois (porque vai ser gerado automaticamente)
-        printf("[2]\tMostrar todas as séries cadastradas.\n");
-        printf("[3]\tVisualizar uma série específica.\n");
+        printf("[1]\tMostrar todas as séries cadastradas.\n");
+        printf("[2]\tVisualizar uma série específica.\n");
         printf("[0]\tSair.\n\n");
+        scanf("%d", &op);
+        
         switch(op){
             case 1:
-                addSeries("./data/registros.dat");
+                readFile("./data/db_series.bin");
                 break;
             case 2:
-                readFile("./data/registros.dat");
-                break;
-            case 3:
-                printf("\n\nDigite o id da série: \n");
+                printf("\n\nDigite o ID da série desejada: \n");
                 scanf("%d", &id);
                 printf("\n");
-                if(!findSeries(id, "registros.dat")){
-                    printf("\n\nNão foi encontrada nenhuma série com id igual a %d. \n\n", id);
+                if(!findSeries(id, "./data/db_series.bin")){
+                    printf("\n\nNão foi encontrada nenhuma série com ID igual a %d. \n\n", id);
                 }
                 break;
         }
-        scanf("%d", &op);
-    }
+    } while(op!=0); 
     
-   
+    printf("\n\n=============================================================\n");
+    printf("\t\t     SESSÃO ENCERRADA\n");
+    printf("=============================================================\n");
    
    return 0;
 }

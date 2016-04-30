@@ -1,0 +1,23 @@
+naruto,ninja lutando por ai...,japan,1994,18,shounen
+bleach,shinigami ceifando,japan,2002,13,shounen
+soul eater,cabulosamente confuso,japan,2005,2,shounen
+gintama,ocioso forte para ****,japan,2001,6,shounen
+hagane no renkinjutsushi,alchimistas lutando contra humunculos,japan,2003,4,shounen
+tokyo ghoul,subespecies humanas comendo pessoas,japan,2010,3,shounen
+slam dunk,basquete colegial,japan,1991,5,shounen
+dragon ball,lutadores marciais batalhando com E.T.s,japan,1980,99,shounen
+yu yu hakusho,aventuras do submundo contra monstros,japan,1989,88,shounen
+yugioh,partidas de card/tabuleiro,japan,1993,99,shounen
+power ranger,pessoas estranhas vestindo calças leg,japan,1900,99,shounen
+ultraman,pessoa estranha vestindo calça leg e gigante,japan,1900,99,shounen
+bayblade,crianças brincando de peão alucinados,japan,2003,3,shounen
+kirby,criatura espacial que come tudo,japan,1999,1,shounen
+code geass,revoltado juvenil que ganha poderes e provoca uma guerra global,japan,2003,3,shounen
+pandora hearts,garoto misterioso que conhece uma menina que é na verdade um coelho assassino,japan,2001,1,shounen
+one piece,um garoto vida louca que quer virar piratão,japan,1990,22,shounen
+nanatsu no taizai,um bando de guerreiros muito massa marginalizado pela realeza,japan,2010,2,shounen
+one punch-man,um homem forte demais que luta por hobby,japan,2012,2,shounen
+magi,um garoto mago que anda pelo mundo em busca da paz mundial,japan,2008,3,shounen
+ajin,pessoas imortais perseguidos para experiencias,japan,2013,1,shounen
+
+

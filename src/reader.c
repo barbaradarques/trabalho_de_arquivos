@@ -7,6 +7,7 @@
 ============================================= */
 
 #include "reader.h"
+#include <string.h>
 
 /* Ordem dos Campos:
     id                  char
@@ -18,39 +19,40 @@
     genero              char[variável]
 */
 
-char* readStringField(FILE* fp){
-    char* str = (char*) malloc(255); // 255 é o tamanho máximo dos campos de string
-    char ch;
-    int i = 0;
-    while((ch=fgetc(fp))!=FIELD_DELIMITER && ch!=REG_DELIMITER){
-        str[i] = ch;
-        ++i;
-    }
-    str[i] = '\0';
-    return str;
-}
-
+/*
+ *  Função que busca e imprime série com o ID igual ao fornecido.
+ *
+ *  PARÂMETROS:
+ *      int val - valor do ID da série desejada.
+ *      char* filename - endereço local do arquivo de registros.
+ *  RETORNO:
+ *      int - 1 se série existir, 0 caso contrário.
+ *
+ */
 int findSeries(int val, char* filename){
     int ch1, ch2;
     char id, seasons, delimiter;
     short int year;
     char *title, *desc, *country, *genre;
     FILE *fp = fopen(filename, "rb");
-    while((ch1=fgetc(fp))!=EOF){
-        ungetc(ch1, fp);
-        fread(&id, sizeof(char), 1, fp);
-        if(id==val){
-            fread(&delimiter, sizeof(char), 1, fp);
-            fread(&year, sizeof(short int), 1, fp);                 fread(&delimiter, sizeof(char), 1, fp);
-            fread(&seasons, sizeof(char), 1, fp);                   fread(&delimiter, sizeof(char), 1, fp);
+    while((ch1=fgetc(fp))!=EOF){ // lê o arquivo de registros até o final
+        id = (char) ch1;
+        if(id==val){ // se encontrada uma série com o mesmo ID procurado
+        
+            // leitura de campos
+            fread(&year, sizeof(short int), 1, fp);                 
+            fread(&seasons, sizeof(char), 1, fp);                   
             title = readStringField(fp);
             desc = readStringField(fp);
             country = readStringField(fp);
             genre = readStringField(fp);
+            
+            // impressão dos campos lidos
             printf("\n============= Série Encontrada! =============\n\n");
-            printf("- Id:\t\t\t%d\n", (int)id);
             printf("- Título:\t\t%s\n", title);
-            printf("- Descrição:\t\t%s\n", desc);
+            printf("- ID:\t\t\t%d\n", (int)id);
+            printf("- Descrição:\t\t");
+            printDescription(desc);
             printf("- Produzido em:\t\t%s\n", country);
             printf("- Ano de Lançamento:\t%d\n", (int)year);
             printf("- Número de Temporadas:\t%d\n", (int)seasons);
@@ -62,42 +64,59 @@ int findSeries(int val, char* filename){
             free(genre);
             return TRUE;
         } 
-        // pula os campos fixos que seguem o id
-        fseek(fp, 6, SEEK_CUR); // sizeof(year+seasons+3*'|')
+        
+        // pula os campos de tamanho fixo que seguem o ID
+        fseek(fp, 3, SEEK_CUR); // sizeof(year+seasons)
+        
+        // pula o restante dos campos
         do {
             ch2=fgetc(fp);
         } while (ch2 != REG_DELIMITER);
+        
+        // segue loop lendo o ID do próximo registro...
     }
     
     fclose(fp);
     return FALSE;
 }
 
-void readFile(char* filename){ // imprime todos os registros ordenadamente
-    int ch;
+/*
+ *  Função que lê e imprime todos os registros salvos em arquivo.
+ *
+ *  PARÂMETRO:
+ *      char* filename - endereço local do arquivo de registros
+ *
+ */
+
+void readFile(char* filename){
     char id, seasons;
-    char delimiter;
+    char delimiter, aux;
+    int ch;
     short int year;
     char *title, *desc, *country, *genre;
     FILE *fp = fopen(filename, "rb");
+    printf("\n\n=============================================================\n");
+    printf("\t\t    SÉRIES CADASTRADAS\n");
+    printf("=============================================================\n\n");
     
+    // cada iteração lê um registro (até o fim do arquivo de registros)
     while((ch=fgetc(fp))!=EOF){
-        ungetc(ch, fp); // retorna o char que foi lido só para testar o EOF
-        fread(&id, sizeof(char), 1, fp);                        fread(&delimiter, sizeof(char), 1, fp);
-        fread(&year, sizeof(short int), 1, fp);                 fread(&delimiter, sizeof(char), 1, fp);
-        fread(&seasons, sizeof(char), 1, fp);                   fread(&delimiter, sizeof(char), 1, fp);
+        id = (char) ch;                  
+        fread(&year, sizeof(short int), 1, fp);                 
+        fread(&seasons, sizeof(char), 1, fp);                   
         title = readStringField(fp);
         desc = readStringField(fp);
         country = readStringField(fp);
         genre = readStringField(fp);
-        printf("\n==========================================\n\n");
-        printf("- Id:\t\t\t%d\n", (int)id);
         printf("- Título:\t\t%s\n", title);
-        printf("- Descrição:\t\t%s\n", desc);
+        printf("- ID:\t\t\t%d\n", (int)id);
+        printf("- Descrição:\t\t");
+        printDescription(desc); // imprime a descrição em várias linhas
         printf("- Produzido em:\t\t%s\n", country);
         printf("- Ano de Lançamento:\t%d\n", (int)year);
         printf("- Número de Temporadas:\t%hhd\n", (int)seasons);
-        printf("- Gênero:\t\t%s\n\n", genre);
+        printf("- Gênero:\t\t%s\n", genre);
+        printf("\n-------------------------------------------------------------\n\n");
         free(title);
         free(desc);
         free(country);
@@ -108,32 +127,68 @@ void readFile(char* filename){ // imprime todos os registros ordenadamente
     
 }
 
-int addSeries(char* filename){
-    char id, seasons;
-    short int year;
-    char title[55], desc[255], country[50], genre[30];
-    FILE *fp = fopen(filename, "ab");
-    char fieldEnd = FIELD_DELIMITER;
-    char regEnd = REG_DELIMITER;
-    
-    // Lê os campos da entrada
-    // -- Obs.: getchar() é usado aqui para consumir o '\n' de cada entrada
-    scanf("%hhd", &id);     getchar();
-    scanf("%55[^\n]", title);    getchar();
-    scanf("%255[^\n]", desc);   getchar();
-    scanf("%50[^\n]", country);     getchar();
-    scanf("%hd", &year);    getchar();
-    scanf("%hhd", &seasons);  getchar();
-    scanf("%30[^\n]", genre);     getchar();
 
-    // Escreve no arquivo de dados
-    fwrite(&id, sizeof(char), 1, fp);                       fwrite(&fieldEnd, sizeof(char), 1, fp);
-    fwrite(&year, sizeof(short int), 1, fp);                fwrite(&fieldEnd, sizeof(char), 1, fp);
-    fwrite(&seasons, sizeof(char), 1, fp);                  fwrite(&fieldEnd, sizeof(char), 1, fp);
-    fwrite(title, sizeof(char), strlen(title), fp);         fwrite(&fieldEnd, sizeof(char), 1, fp);
-    fwrite(desc, sizeof(char), strlen(desc), fp);           fwrite(&fieldEnd, sizeof(char), 1, fp);
-    fwrite(country, sizeof(char), strlen(country), fp);     fwrite(&fieldEnd, sizeof(char), 1, fp);
-    fwrite(genre, sizeof(char), strlen(genre), fp);         fwrite(&regEnd, sizeof(char), 1, fp);
+/*
+ *  Função que lê e imprime todos os registros salvos em arquivo.
+ *
+ *  PARÂMETRO:
+ *      FILE* fp - ponteiro para a posição no arquivo de registros de um
+ *      determinado campo de tamanho variável (sempre strings).
+ *  RETORNO:
+ *      char* - string correspondente ao campo lido.
+ *
+ */
+ 
+char* readStringField(FILE* fp){
+    char* str = (char*) malloc(255); // 255 é o tamanho máximo dos campos de string
+    char ch;
+    int i = 0;
     
-    fclose(fp);
+    // lê byte a byte até encontrar um delimitador
+    while((ch=fgetc(fp))!=FIELD_DELIMITER && ch!=REG_DELIMITER){ 
+        str[i] = ch;
+        ++i;
+    }
+    str[i] = '\0'; // encerra a string
+    return str;
+}
+
+/*
+ *  Função que imprime linha por linha o texto de descrição,
+ *  tomando o cuidado para não dividir palavras ao meio.
+ *  
+ *  PARÂMETRO:
+ *      char* desc - texto do campo descrição.
+ */
+ 
+void printDescription(char* desc){
+    int offset, i = 0; 
+    char aux;
+    int len = strlen(desc);
+    int line_counter = 1;
+    
+    while(i<len){ // enquanto ainda houver texto para ser impresso
+        offset = 37; // quantidade de caracteres a serem impressos naquela linha
+        if(i+37<len){ // caso essa não seja a última linha da descrição
+            // procura finais de palavras ou frases
+             while(!(desc[i+offset]==' ' || desc[i+1+offset]==' ' || desc[i+offset]=='.' || desc[i+offset]==',')){
+                --offset;
+            }
+            aux = desc[i+offset];
+            // reposiciona momentaneamente o fim da string para limitar a impressão via printf
+            desc[i+offset] = '\0';
+        }
+        if(line_counter==1){ // se for a primeira linha da descrição
+            printf("%s\n", &desc[i]);
+        } else {
+            printf("\t\t\t%s\n", &desc[i]);
+        }
+        if(i+37<len){
+            // retira o '\0' auxiliar e volta a string para o que era antes
+            desc[i+offset] = aux;
+        }
+        // (+1) para ignorar o espaço que vem após espaços e sinais de pontuação no fim da linha
+        i+=offset+1; 
+        ++line_counter;
+    }
 }
